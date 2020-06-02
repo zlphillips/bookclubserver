@@ -15,6 +15,6 @@ app.use(require('./middleware/headers'));
 app.use('/bookclub/user', user)
 app.use('/bookclub/book', book)
 
-app.listen(3002, function(){
-    console.log("The server is using 3002")
+app.listen(process.env.PORT, function(){
+    console.log(`${process.env.PORT}`)
 })
