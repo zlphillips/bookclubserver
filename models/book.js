@@ -4,6 +4,7 @@ module.exports = function(sequelize, DataTypes){
         author: DataTypes.STRING,
         genre: DataTypes.STRING,
         length: DataTypes.INTEGER,
+        rating: DataTypes.INTEGER,
         review: DataTypes.STRING,
         owner: DataTypes.INTEGER,
     })

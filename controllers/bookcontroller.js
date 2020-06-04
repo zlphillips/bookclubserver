@@ -10,6 +10,7 @@ router.post('/new-review', validateSession, (req, res) => {
     let author = req.body.book.author;
     let genre = req.body.book.genre; //should this be a drop down with options?
     let length = req.body.book.length; //want to add a "total pages read" "total books read" output for user's profile
+    let rating = req.body.book.rating;
     let review = req.body.book.review; //want to add a star rating or "recommended" boolean (YES/NO)
     let owner = req.user.id;
 BookModel
@@ -18,6 +19,7 @@ BookModel
         author: author,
         genre: genre,
         length: length,
+        rating: rating,
         review: review,
         owner: owner
     })
