@@ -5,7 +5,7 @@ var user = require('./controllers/usercontroller')
 var book = require('./controllers/bookcontroller')
 var sequelize = require('./db')
 
-sequelize.sync({force: true});
+sequelize.sync();
 
 app.use(express.json());
 
